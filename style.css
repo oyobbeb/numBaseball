@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff50;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(252, 44, 44);
+  margin-right: 5px;
+  text-align: center;
+  width: 40%;
+  font-size: 1.1rem;
+  outline: none;
+}
+input::placeholder {
+  opacity: 1; text-align: center; font-style: italic ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*
+.input-form button{
+  background-color: transparent;
+  border:none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: cadetblue;
+  text-align: center;
+  transition: 300ms ease;
+}
+*/
+
+.input-form button:hover{
+  color: rgba(255, 0, 0, 0.589);
+  transform: scale(1.1);
+}
+
+.input-form span {
+  margin-top: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 40%;
+}
+
+.start button {
+  background-color:rgb(231, 28, 28);
+  color:white;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px 10px;
+  width: 100px;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.start button:last-child{
+  background-color: rgb(51, 190, 255);
+}
+
+.start button:hover{
+  background-color: rgb(252, 196, 41);
+  transform: scale(1.1);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.671);
+  margin: 20px  auto ;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.information span {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.information 
+.input-number,
+.strike,
+.ball {
+  margin: 4px 10px;
+}
